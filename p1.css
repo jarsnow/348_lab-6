@@ -1,0 +1,26 @@
+body{
+    background-image: url("https://media.istockphoto.com/id/672298630/photo/white-wrinkle-paper-texture-background.jpg?s=612x612&w=0&k=20&c=YEFVWCpx299NANUdnpsJj30aJutw8z4MksLGukdQYmw=");
+    background-size: 100% 100%;
+}
+
+#special_image{
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-name: special;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    border-radius: 10%;
+
+}
+
+#image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes special {
+    from {filter: hue-rotate(0deg); width: 200px;}
+    to {filter: hue-rotate(360deg); width: 220px;}
+}
